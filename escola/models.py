@@ -6,3 +6,9 @@ class Aluno(models.Model):
 
     def __str__(self):
         return self.nome
+    
+
+class Professor(models.Model):
+    Nome = models.CharField(max_length=30)
+    cpf = models.CharField(max_length=30)
+    matricula=models.IntegerField(max_length=20)
